@@ -1,0 +1,31 @@
+{
+  "name": "ot-hub-server",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "jest --runInBand",
+    "seed": "node scripts/seed.js",
+    "format": "prettier --write \"src/**/*.js\" \"scripts/**/*.js\" \"jest.config.js\" \"package.json\"",
+    "format:check": "prettier --check \"src/**/*.js\" \"scripts/**/*.js\" \"jest.config.js\" \"package.json\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.9.10",
+    "supertest": "^7.0.0"
+  }
+}
